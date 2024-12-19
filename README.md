@@ -1,5 +1,3 @@
-Overview
-
 This project addresses challenges related to FPGA congestion, integrating machine learning to manage resource utilization effectively. 
 
 The main objective of this research project is to explore feature engineering techniques that can effectively monitor the dynamic evolution of constrained zones. This involves leveraging cost-related data to design features capable of capturing these changes. To achieve this, we tested various feature ideas and evaluated them using simple machine learning models to determine whether these features represent viable avenues for future research. Machine learning models are subsequently utilized to assess the viability of these features, determining their potential value for future research directions and practical applications.
@@ -103,6 +101,7 @@ Steps to Follow
 
 Dataset Generation:
 Use create_dataset.py to generate a dataset with features and labels files : one file for each benchmark.
+
 NB: running create_dataset.py for all benchmarks at once uses too much memory. We strongly advise to run one benchmark at a time.
 
 Model Training:
