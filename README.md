@@ -49,9 +49,10 @@ Each node in the graph includes detailed attributes such as:
 The parsing process also filters specific nets if needed, providing flexibility for focused analysis.
 Parsing route files is one of the most critical steps in this project as it lays the foundation for all information extraction for feature calculations.
 
-Parsing History Cost Files:
+Parsing History Cost Files :
 The extract_benchmark(number) function also parses .hcost files, which store historical cost data for routing nodes.
 These costs are mapped to specific nodes and iterations to track the evolution of routing challenges over time.
+
 Outputs of these two first steps include dictionaries for both route_tree and history_costs, which serve as inputs for feature generation.
 
 2. Feature Calculation
@@ -79,13 +80,13 @@ Useful for identifying routing imbalances and sources of congestion.
 
 3. Cost Aggregation
    
-- Calculate_sum_tile_costs(tile_nodes, hcost_data, relevant_iterations) or calculate_weighted_average_cost(tile_nodes, hcost_data, relevant_iterations) : 
-The calculate_sum_tile_costs function computes a simple sum of costs for each channel.
-The calculate_weighted_average_cost function calculates weighted average costs or each tile by applying a logarithmic scaling formula. Weights are determined by the frequency of cost values, ensuring a focus on infrequent high-cost events.
+Calculate_sum_tile_costs(tile_nodes, hcost_data, relevant_iterations) or calculate_weighted_average_cost(tile_nodes, hcost_data, relevant_iterations) : 
+- The calculate_sum_tile_costs function computes a simple sum of costs for each channel.
+- The calculate_weighted_average_cost function calculates weighted average costs or each tile by applying a logarithmic scaling formula. Weights are determined by the frequency of cost values, ensuring a focus on infrequent high-cost events.
 
-4. Feature Generation
+4. Feature Generation : 
    
-- Generate_feature_set(route_data, hcost_data, total_iterations, target_percentages=[1.0])
+Generate_feature_set(route_data, hcost_data, total_iterations, target_percentages=[1.0]) function : 
 - Combines pin density, channel usage, and cost metrics into a structured dataset.
 - Generates features for each tile and extracts targets for specific iteration percentages.
 - Returns a DataFrame of features and corresponding targets.
