@@ -13,7 +13,7 @@ The project structure includes two main directories, each with specialized funct
 1. create_dataset.py
 This script is responsible for generating and preparing datasets. Key functionalities include:
 - Master file for creating features and targets required for model training.
-- Handling data export to formats suitable for machine learning pipelines (e.g., CSV).
+- Handling data export to formats suitable for machine learning pipelines (CSV, ...).
 
 3. functions.py
 This script provides utility functions for:
