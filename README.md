@@ -1,4 +1,4 @@
-# FPGA Congestion Management with Machine Learning
+# Machine Learning Research project for FPGA Routing Optimization
 
 This project addresses challenges related to FPGA congestion, integrating machine learning to manage resource utilization effectively. 
 
