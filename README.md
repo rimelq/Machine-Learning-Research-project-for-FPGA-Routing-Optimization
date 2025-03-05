@@ -2,6 +2,14 @@
 
 This project addresses challenges related to FPGA congestion, integrating machine learning to manage resource utilization effectively. 
 
+## FPGA Structure
+
+### Figure 1: FPGA Tile-Based Architecture
+![FPGA Tile-Based Architecture](fpga_tile.png)
+
+### Figure 2: Channel Usage for Horizontal Channels
+![Channel Usage for Horizontal Channels](channel_usage.png)
+
 ## Objectives
 
 The main objective of this research project is to explore feature engineering techniques that can effectively monitor the dynamic evolution of constrained zones. This involves leveraging cost-related data to design features capable of capturing these changes. To achieve this, we tested various feature ideas and evaluated them using simple machine learning models to determine whether these features represent viable avenues for future research. Machine learning models are subsequently utilized to assess the viability of these features, determining their potential value for future research directions and practical applications.
